@@ -105,3 +105,4 @@ dist
 
 # MacOS files
 .DS_Store
+.idea
