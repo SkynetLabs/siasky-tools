@@ -10,12 +10,7 @@ import { calcUptime } from "./upTimeCalculation";
 export const fetchHealthCheck = (domain, index, sd, setServerData) => {
   fetch("https://" + domain + "/health-check?nocache=true")
     .then((res) => {
-      const active =
-        res.status > 200
-          ? "🔻"
-          : res.disabled
-          ? `Disabled: ${res.disabled}`
-          : "🆙️"; //⬆
+      const active = res.status > 200 ? "Down!" : "Yes";
       let d = sd;
       d[index].active = active;
       //setServerData([...d]);
@@ -26,19 +21,19 @@ export const fetchHealthCheck = (domain, index, sd, setServerData) => {
       return { res: val, d: d };
     })
     .then(({ res, d }) => {
-      //console.log(res);
+      if (res.disabled) {
+        d[index].active = `Disabled: ${res.disabled}`;
+      }
       if (res.entry && res.entry.checks) {
         const checks = res.entry.checks;
         const health = checks.filter((el) => el.name === "accounts");
-        //console.log(health)
         const accounts = health.length && health[0].up ? "healthy" : "down";
         d[index].accounts = accounts;
       }
       setServerData([...d]);
     })
     .catch((e) => {
-      //console.log(e)
-      const active = "😵";
+      const active = "Unresponsive";
       const accounts = "Unknown";
       let d = sd;
       d[index].active = active;

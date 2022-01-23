@@ -1,5 +1,16 @@
 //thresholds stores threshold values for table cell colors
 export const thresholds = {
+  active: [
+    { value: "Yes", color: "green", comparator: "eq" },
+    { value: "Down!", color: "red", comparator: "eq" },
+    { value: "Disabled", color: "orange", comparator: "eq" },
+    { value: "Unresponsive", color: "red", comparator: "eq" },
+  ],
+  accounts: [
+    { value: "healthy", color: "green", comparator: "eq" },
+    { value: "Unknown", color: "red", comparator: "eq" },
+    { value: "down", color: "red", comparator: "eq" },
+  ],
   dl_rate: [{ value: 25000, color: "red", comparator: "gt" }],
   ul_base_rate: [{ value: 1000, color: "red", comparator: "gt" }],
   ul_chunk_rate: [{ value: 1000, color: "red", comparator: "gt" }],

@@ -257,7 +257,7 @@ function DataTable() {
     if (col === "active") {
       let count = 0;
       visibleServers.forEach((item) => {
-        if (item.active === "🆙️") {
+        if (item.active === "Yes") {
           count += 1;
         }
       });

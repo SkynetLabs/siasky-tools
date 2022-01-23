@@ -1,22 +1,5 @@
 //object of all servers, where each key represents a domain and corresponding value is array of servers
 export const servers = {
-  dev: [
-    {
-      name: "dev1.siasky.dev",
-      ip: "88.198.21.206",
-      last_announce: "2021-11-30T01:02:50.179401729Z",
-    },
-    {
-      name: "dev2.siasky.dev",
-      ip: "168.119.138.85",
-      last_announce: "2021-11-30T01:01:07.556347237Z",
-    },
-    {
-      name: "dev3.siasky.dev",
-      ip: "46.4.121.39",
-      last_announce: "2021-11-30T01:02:37.163056724Z",
-    },
-  ],
   "siasky.net": [
     {
       name: "eu-fin-1.siasky.net",
@@ -307,11 +290,56 @@ export const servers = {
       last_announce: "2021-11-30T01:00:19.473762686Z",
     },
   ],
+  "skynetpro.net": [
+    {
+      name: "eu-pol-101.skynetpro.net",
+      displayName: "eu-pol-101",
+      ip: "",
+    },
+    {
+      name: "eu-pol-102.skynetpro.net",
+      displayName: "eu-pol-102",
+      ip: "",
+    },
+    {
+      name: "us-tx-101.skynetpro.net",
+      displayName: "us-tx-101",
+      ip: "",
+    },
+    {
+      name: "us-tx-102.skynetpro.net",
+      displayName: "us-tx-102",
+      ip: "",
+    },
+  ],
+  dev: [
+    {
+      name: "dev1.siasky.dev",
+      ip: "88.198.21.206",
+      last_announce: "2021-11-30T01:02:50.179401729Z",
+    },
+    {
+      name: "dev2.siasky.dev",
+      ip: "168.119.138.85",
+      last_announce: "2021-11-30T01:01:07.556347237Z",
+    },
+    {
+      name: "dev3.siasky.dev",
+      ip: "46.4.121.39",
+      last_announce: "2021-11-30T01:02:37.163056724Z",
+    },
+  ],
   "siasky.xyz": [
     {
       name: "siasky.xyz",
       ip: "135.181.139.32",
       last_announce: "2021-11-30T01:04:13.927962906Z",
+    },
+  ],
+  "Team Portals": [
+    {
+      name: "seveysky.net",
+      ip: "",
     },
   ],
 };
