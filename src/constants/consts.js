@@ -3,7 +3,7 @@ export const thresholds = {
   active: [
     { value: "Yes", color: "green", comparator: "eq" },
     { value: "Down!", color: "red", comparator: "eq" },
-    { value: "Disabled", color: "orange", comparator: "eq" },
+    { value: "Disabled", color: "orange", comparator: "includes" },
     { value: "Unresponsive", color: "red", comparator: "eq" },
   ],
   accounts: [

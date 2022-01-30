@@ -7,7 +7,7 @@ import {
   msAccessors,
   totalColumns,
 } from "./constants/consts";
-import { EyeOffIcon } from "@heroicons/react/solid";
+import { EyeOffIcon, RefreshIcon } from "@heroicons/react/solid";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { useHotkeys } from "react-hotkeys-hook";
@@ -42,8 +42,8 @@ const tabsLengths = [0].concat(
   Object.keys(servers).map((key) => servers[key].length)
 );
 const columnGroups = [
-  { header: "General", numCols: 9, hide: false },
-  { header: "Performance", numCols: 15, hide: true, id: "performance" },
+  { header: "General", numCols: 9, hide: false, id: 'general'},
+  { header: "Performance", numCols: 10, hide: true, id: "performance" },
   { header: "", numCols: 1, hide: false },
   { header: "Renter Stats", numCols: 10, hide: true, id: "renter_stats" },
 ];
@@ -281,6 +281,26 @@ function DataTable() {
     }
   };
 
+  //handles refresh of new data
+  const handleRefresh = () => {
+    const server2d = Object.values(servers);
+    const server1d = [].concat(...server2d);
+    let serverDisplayData = [...serverData];
+    console.log(serverDisplayData);
+    server1d.forEach((item, index) => {
+      updateFunction(item.name , index, serverDisplayData);
+    });
+  }
+  //returns number of columns to span for the column groups
+  const getColumnSpan = (columnGroup) => {
+    if (columnGroup.header==='') {
+      return hiddenCols.has('health_scan_time') ? 0 : 1;
+    }
+    const children = columnGroupsList[columnGroup.id].children;
+    const shownChildren = children.filter(item => !hiddenCols.has(item));
+    return shownChildren.length
+  }
+
   return (
     <div>
       <div style={{ height: "50px" }}>
@@ -296,13 +316,18 @@ function DataTable() {
               ))}
             </Tabs>
           </ThemeProvider>
-          <button
-            className={"bg-primary rounded-full mt-2 mr-2 py-1 px-6"}
-            id={"filter_list"}
-            onClick={handleMenuClick}
-          >
-            Column Selection
-          </button>
+          <div className={'flex flex-row mt-2 items-center'}>
+            <button onClick={handleRefresh} className={'flex mr-4 p-1 rounded-full hover:bg-palette-100'}>
+              <RefreshIcon className={'h-6'}/>
+            </button>
+            <button
+                className={"bg-primary rounded-full mr-2 py-1 px-6"}
+                id={"filter_list"}
+                onClick={handleMenuClick}
+            >
+              Column Selection
+            </button>
+          </div>
           <Menu
             id="basic-menu"
             anchorEl={menuAnchor}
@@ -359,8 +384,9 @@ function DataTable() {
           <TableHead>
             <TableRow>
               {columnGroups.map((col) => {
-                return !hiddenCols.has(col.id) ? (
-                  <TableCell align="center" colSpan={col.numCols} style={{}}>
+                const colSpan = getColumnSpan(col)
+                return !hiddenCols.has(col.id) && colSpan!==0? (
+                  <TableCell align="center" colSpan={colSpan}>
                     {col.header}
                     {col.hide ? (
                       <button
@@ -376,7 +402,7 @@ function DataTable() {
             <TableRow>
               {columnList.map((col) => {
                 return !hiddenCols.has(col.accessor) ? (
-                  <StyledTableCell className={`z-10`} numeric>
+                  <StyledTableCell padding={'none'} className={`z-10`} align={'center'} numeric>
                     <TableSortLabel
                       active={orderBy === col.accessor}
                       direction={orderBy === col.accessor ? order : "asc"}
@@ -402,13 +428,13 @@ function DataTable() {
             <TableBody>
               <StyledTableRow key={"totals"}>
                 <StickyTableCell>
-                  <StyledTableCell align="right" className={classes.cell}>
+                  <StyledTableCell className={classes.cell}>
                     Totals
                   </StyledTableCell>
                 </StickyTableCell>
                 {columnList.slice(1).map((col) => {
                   return !hiddenCols.has(col.accessor) ? (
-                    <StyledTableCell className={classes.cell}>
+                    <StyledTableCell align={'center'} padding={'none'} className={classes.cell}>
                       {getColumnTotal(col.accessor, serverData)}
                     </StyledTableCell>
                   ) : null;
@@ -424,6 +450,7 @@ function DataTable() {
                         <StyledTableCell
                           numeric
                           align="right"
+                          padding={'none'}
                           className={classes.cell}
                         >
                           {n.name}
@@ -434,13 +461,22 @@ function DataTable() {
                           <StyledTableCell
                             className={`z-10`}
                             numeric
+                            align={'center'}
+                            padding={'none'}
                             style={{
-                              color: getStyle(n[col.accessor], col.accessor),
+                              color: !msAccessors.has(col.accessor) ? getStyle(n[col.accessor], col.accessor) : null,
                             }}
                           >
                             {msAccessors.has(col.accessor) &&
                             n[col.accessor] !== ""
-                              ? n[col.accessor] + "ms"
+                              ?  (<>
+                                  <span style={{color: getStyle(n[col.accessor], col.accessor)}}>
+                                    {n[col.accessor] + "ms"}
+                                  </span>{' / '}
+                                  <span style={{color: getStyle(n[col.accessor+'9'], col.accessor+'9')}}>
+                                    {n[col.accessor+'9'] + "ms"}
+                                  </span>
+                                </>)
                               : n[col.accessor]}
                           </StyledTableCell>
                         ) : null;

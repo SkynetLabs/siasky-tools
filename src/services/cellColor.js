@@ -27,6 +27,11 @@ export const getStyle = (val, accessor) => {
             color = item.color;
           }
           break;
+        case "includes":
+          if (val.includes(item.value)) {
+            color = item.color;
+          }
+          break;
         default:
           color = "black";
           break;

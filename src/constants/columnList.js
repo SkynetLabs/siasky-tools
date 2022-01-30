@@ -23,15 +23,10 @@ export const columnGroupsList = {
       "regr_rate",
       "regw_rate",
       "dl_p99",
-      "dl_p999",
       "ul_base_p99",
-      "ul_base_p999",
       "ul_chunk_p99",
-      "ul_chunk_p999",
       "regread_p99",
-      "regread_p999",
       "regwrite_p99",
-      "regwrite_p999",
     ],
   },
   renter_stats: {
@@ -112,40 +107,20 @@ export const columnList = [
     accessor: "dl_p99",
   },
   {
-    header: "DL (p999)",
-    accessor: "dl_p999",
-  },
-  {
     header: "UL Base (p99)",
     accessor: "ul_base_p99",
-  },
-  {
-    header: "UL Base (p999)",
-    accessor: "ul_base_p999",
   },
   {
     header: "UL Chunk (p99)",
     accessor: "ul_chunk_p99",
   },
   {
-    header: "UL Chunk (p999)",
-    accessor: "ul_chunk_p999",
-  },
-  {
     header: "RegRead (p99)",
     accessor: "regread_p99",
   },
   {
-    header: "RegRead (p999)",
-    accessor: "regread_p999",
-  },
-  {
     header: "RegWrite (p99)",
     accessor: "regwrite_p99",
-  },
-  {
-    header: "RegWrite (p999)",
-    accessor: "regwrite_p999",
   },
   {
     header: "Health Scan Time (hours)",
