@@ -36,13 +36,14 @@ import Check from "@mui/icons-material/Check";
 import { getComparator } from "./services/columnSort";
 import { fetchHealthCheck, fetchStats } from "./services/getServerData";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import {initialServerData} from "./constants/serverData";
 
 const domainTabs = ["All"].concat(Object.keys(servers));
 const tabsLengths = [0].concat(
   Object.keys(servers).map((key) => servers[key].length)
 );
 const columnGroups = [
-  { header: "General", numCols: 9, hide: false, id: 'general'},
+  { header: "General", numCols: 8, hide: false, id: 'general'},
   { header: "Performance", numCols: 10, hide: true, id: "performance" },
   { header: "", numCols: 1, hide: false },
   { header: "Renter Stats", numCols: 10, hide: true, id: "renter_stats" },
@@ -75,7 +76,7 @@ function DataTable() {
      */
   const [tabIndex, setTabIndex] = useState(0);
   const [order, setOrder] = useState("asc");
-  const [orderBy, setOrderBy] = useState("name");
+  const [orderBy, setOrderBy] = useState("region");
   const [hiddenCols, setHiddenCols] = useState(new Set([]));
   const [menuAnchor, setMenuAnchor] = useState(null);
   const [initLoading, setInitLoading] = useState(true);
@@ -192,48 +193,16 @@ function DataTable() {
     setStopIndex(server1d.length);
     let serverDisplayData = [];
     server1d.forEach((item) => {
-      let serverData = {
-        name: item.displayName ? item.displayName : item.name,
-        production: "❌",
-        region: "",
-        subregion: "",
-        ip: "",
-        commit: "",
-        active: "",
-        accounts: "",
-        alerts: "",
-        dl_rate: "",
-        ul_base_rate: "",
-        ul_chunk_rate: "",
-        regr_rate: "",
-        regw_rate: "",
-        dl_p99: "",
-        dl_p999: "",
-        ul_base_p99: "",
-        ul_base_p999: "",
-        ul_chunk_p99: "",
-        ul_chunk_p999: "",
-        regread_p99: "",
-        regread_p999: "",
-        regwrite_p99: "",
-        regwrite_p999: "",
-        health_scan_time: "",
-        files: "",
-        storage: "",
-        contracts: "",
-        wallet: "",
-        allowance: "",
-        max_storage_price: "",
-        repair: "",
-        max_health: "",
-        stuck_chunks: "",
-        uptime: "",
-      };
+      let serverData = {...initialServerData};
+      serverData.name = item.displayName ? item.displayName : item.name;
       serverData.ip = item.ip;
       if (item.displayName) {
         const serverInfo = item.displayName.split("-");
-        serverData.region = region[serverInfo[0]];
-        serverData.subregion = subRegion[serverInfo[1]];
+        if (serverInfo[0]==='us') {
+          serverData.region = `${region[serverInfo[0]]} ${subRegion[serverInfo[1]]}`;
+        } else {
+          serverData.region = region[serverInfo[0]];
+        }
         serverData.production = "✔️";
       }
       serverDisplayData.push(serverData);

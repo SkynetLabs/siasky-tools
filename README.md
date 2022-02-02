@@ -30,3 +30,29 @@ An overview of skynet servers.
 <kbd>shift</kbd><kbd>V</kbd><kbd>L</kbd><kbd>A</kbd> Show Low Allowance <br/><br/>
 <kbd>shift</kbd><kbd>V</kbd><kbd>H</kbd><kbd>C</kbd> Show High Contract Data > 100TB <br/><br/>
 <kbd>shift</kbd><kbd>V</kbd><kbd>H</kbd><kbd>R</kbd> Show High Repair Data > 1TB <br/><br/>
+
+
+## Constants
+
+#### Column List (columnlist.js)
+
+Contains two constants: columnGroupList and columnList. 
+- ColumnGroupList is an object of the column groups with array of children columns. 
+- ColumnList is array of column objects, each containing header (display string), accessor and description keys.
+
+#### General Constants (consts.js)
+
+Contains five constants: thresholds, msAccessors, totalColumns, region and subregion.
+
+- Thresholds is an object with keys corresponding to column accessors. Each key-value is an array of objects with value, color and comparator keys. This object represents a condition for setting text to the specified color. 'gt' is greater than, 'lt' is less than, 'eq' is equals, and 'includes' is str.includes().
+- msAccessors is a set of column accessors that require the 'ms' unit to be appended to the column value.
+- totalColumns is a set of column accessors that are totaled in the table 'Totals' row.
+- region and subregion are objects that map the server names to Load Balancer Zones.
+
+#### Server Data (serverData.js)
+
+Contains initialServerData constant representing a serverData object with empty key-values.
+
+#### Server List (serverList.js)
+
+Contains the servers constant. Servers is an object where each key represents the server domain. These keys populate the tabs in the UI. Each key maps to an array of server objects, each containing at least name and displayName keys and may contain ip and last_announce keys.

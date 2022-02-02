@@ -289,6 +289,9 @@ export const servers = {
       ip: "65.21.207.249",
       last_announce: "2021-11-30T01:00:19.473762686Z",
     },
+    {name: 'us-pa-1.siasky.net',
+    displayName: 'us-pa-1'},
+    {name: 'us-pa-2.siasky.net', displayName: 'us-pa-2'}
   ],
   "skynetpro.net": [
     {

@@ -1,7 +1,6 @@
 export const initialServerData = {
-  production: false,
+  production: "",
   region: "",
-  subregion: "",
   ip: "",
   commit: "",
   active: "",
@@ -28,7 +27,6 @@ export const initialServerData = {
   contracts: "",
   wallet: "",
   allowance: "",
-  wallet_health: "",
   max_storage_price: "",
   repair: "",
   max_health: "",

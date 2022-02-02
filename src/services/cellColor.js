@@ -2,7 +2,7 @@ import { thresholds } from "../constants/consts";
 
 /**
  * getStyle() get color of table cell based on set thresholds
- * @param {number} val value of the current cell
+ * @param val value of the current cell
  * @param {string} accessor accessor of the current cell
  * @return {string} color of current cell
  */
@@ -13,7 +13,11 @@ export const getStyle = (val, accessor) => {
     styleArr.forEach((item) => {
       switch (item.comparator) {
         case "gt":
-          if (val > item.value) {
+          let parsedVal = val
+          if (accessor === 'files'){
+            parsedVal = parseFloat(val.replace(/,/g, "")); //remove commas
+          }
+          if (parsedVal > item.value) {
             color = item.color;
           }
           break;

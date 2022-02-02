@@ -55,12 +55,8 @@ export const columnList = [
     accessor: "production",
   },
   {
-    header: "Region",
+    header: "LB Zone",
     accessor: "region",
-  },
-  {
-    header: "Sub-region",
-    accessor: "subregion",
   },
   {
     header: "IP Addr",
