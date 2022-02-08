@@ -297,22 +297,32 @@ export const servers = {
     {
       name: "eu-pol-101.skynetpro.net",
       displayName: "eu-pol-101",
-      ip: "",
+      ip: "95.214.53.158",
     },
     {
       name: "eu-pol-102.skynetpro.net",
       displayName: "eu-pol-102",
-      ip: "",
+      ip: "95.214.53.167",
+    },
+    {
+      name: "eu-nl-101.skynetpro.net",
+      displayName: "eu-nl-101",
+      ip: "5.39.218.34",
     },
     {
       name: "us-tx-101.skynetpro.net",
       displayName: "us-tx-101",
-      ip: "",
+      ip: "66.23.203.226",
     },
     {
       name: "us-tx-102.skynetpro.net",
       displayName: "us-tx-102",
-      ip: "",
+      ip: "66.23.203.234",
+    },
+    {
+      name: "us-va-101.skynetpro.net",
+      displayName: "us-va-101",
+      ip: "135.148.100.164",
     },
   ],
   dev: [
