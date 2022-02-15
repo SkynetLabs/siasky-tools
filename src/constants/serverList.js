@@ -10,19 +10,19 @@ export const servers = {
     {
       name: "eu-fin-2.siasky.net",
       displayName: "eu-fin-2",
-      ip: "65.21.74.114",
+      ip: "185.130.226.99",
       last_announce: "2021-11-30T01:00:51.097111436Z",
     },
     {
       name: "eu-fin-3.siasky.net",
       displayName: "eu-fin-3",
-      ip: "65.21.95.126",
+      ip: "185.130.226.6",
       last_announce: "2021-11-29T01:00:14.245975884Z",
     },
     {
       name: "eu-fin-4.siasky.net",
       displayName: "eu-fin-4",
-      ip: "65.21.95.229",
+      ip: "185.130.226.101",
       last_announce: "2021-11-30T01:00:47.765225257Z",
     },
     {
@@ -289,20 +289,27 @@ export const servers = {
       ip: "65.21.207.249",
       last_announce: "2021-11-30T01:00:19.473762686Z",
     },
-    {name: 'us-pa-1.siasky.net',
-    displayName: 'us-pa-1'},
-    {name: 'us-pa-2.siasky.net', displayName: 'us-pa-2'}
+    {
+      name: 'us-pa-1.siasky.net',
+      displayName: 'us-pa-1',
+      ip: "135.148.171.16",
+    },
+    {
+      name: 'us-pa-2.siasky.net',
+      displayName: 'us-pa-2',
+      ip: "135.148.171.15",
+    }
   ],
   "skynetpro.net": [
     {
       name: "eu-pol-101.skynetpro.net",
       displayName: "eu-pol-101",
-      ip: "95.214.53.158",
+      ip: "146.0.75.29",
     },
     {
       name: "eu-pol-102.skynetpro.net",
       displayName: "eu-pol-102",
-      ip: "95.214.53.167",
+      ip: "146.0.75.3",
     },
     {
       name: "eu-nl-101.skynetpro.net",
