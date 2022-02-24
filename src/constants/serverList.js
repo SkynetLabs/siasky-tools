@@ -317,6 +317,11 @@ export const servers = {
       ip: "5.39.218.34",
     },
     {
+      name: "eu-nl-102.skynetfree.net",
+      displayName: "eu-nl-102",
+      ip: "89.248.174.153",
+    },
+    {
       name: "us-tx-101.skynetpro.net",
       displayName: "us-tx-101",
       ip: "66.23.203.226",
