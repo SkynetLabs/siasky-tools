@@ -334,32 +334,32 @@ export const servers = {
   ],
   "skynetfree.net": [
     {
-      name: "eu-nl-102.skynetpro.net",
+      name: "eu-nl-102.skynetfree.net",
       displayName: "eu-nl-102",
       ip: "5.39.218.34",
     },
     {
-      name: "eu-nl-103.skynetpro.net",
+      name: "eu-nl-103.skynetfree.net",
       displayName: "eu-nl-103",
       ip: "89.248.162.160",
     },
     {
-      name: "eu-nl-104.skynetpro.net",
+      name: "eu-nl-104.skynetfree.net",
       displayName: "eu-nl-104",
       ip: "80.82.76.175",
     },
     {
-      name: "eu-lv-101.skynetpro.net",
+      name: "eu-lv-101.skynetfree.net",
       displayName: "eu-lv-101",
       ip: "46.183.219.214",
     },
     {
-      name: "eu-lv-102.skynetpro.net",
+      name: "eu-lv-102.skynetfree.net",
       displayName: "eu-lv-102",
       ip: "46.183.219.215",
     },
     {
-      name: "eu-lv-103.skynetpro.net",
+      name: "eu-lv-103.skynetfree.net",
       displayName: "eu-lv-103",
       ip: "46.183.219.216",
     },
