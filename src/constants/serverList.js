@@ -46,25 +46,25 @@ export const servers = {
     {
       name: "eu-ger-5.siasky.net",
       displayName: "eu-ger-5",
-      ip: "46.4.228.43",
+      ip: "213.227.139.144",
       last_announce: "2021-11-30T01:02:39.679440497Z",
     },
     {
       name: "eu-ger-6.siasky.net",
       displayName: "eu-ger-6",
-      ip: "116.202.158.2",
+      ip: "5.79.121.89",
       last_announce: "2021-11-30T01:01:59.035778409Z",
     },
     {
       name: "eu-ger-7.siasky.net",
       displayName: "eu-ger-7",
-      ip: "148.251.139.27",
+      ip: "37.48.102.70",
       last_announce: "2021-11-30T01:01:32.435621978Z",
     },
     {
       name: "eu-ger-8.siasky.net",
       displayName: "eu-ger-8",
-      ip: "195.201.165.77",
+      ip: "212.32.255.73",
       last_announce: "2021-11-30T01:00:02.105951519Z",
     },
     {
@@ -142,13 +142,13 @@ export const servers = {
     {
       name: "eu-ger-9.siasky.net",
       displayName: "eu-ger-9",
-      ip: "116.202.162.163",
+      ip: "37.48.104.129",
       last_announce: "2021-11-30T01:01:55.756137875Z",
     },
     {
       name: "eu-ger-10.siasky.net",
       displayName: "eu-ger-10",
-      ip: "46.4.41.99",
+      ip: "37.48.104.195",
       last_announce: "2021-11-30T01:00:57.380628465Z",
     },
     {
@@ -244,7 +244,7 @@ export const servers = {
     {
       name: "eu-ger-4.siasky.net",
       displayName: "eu-ger-4",
-      ip: "168.119.80.227",
+      ip: "37.48.102.66",
       last_announce: "2021-11-30T01:03:32.153563006Z",
     },
     {
