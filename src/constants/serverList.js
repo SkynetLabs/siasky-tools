@@ -393,5 +393,9 @@ export const servers = {
       name: "seveysky.net",
       ip: "",
     },
+    {
+      name: "chaindrive.xyz",
+      ip: "",
+    },
   ],
 };
