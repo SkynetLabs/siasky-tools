@@ -125,6 +125,7 @@ export const fetchStats = (domain, index, sd, setServerData) => {
         ).toLocaleString(undefined, {
           maximumFractionDigits: 2,
         });
+      if (res.renewwindow) d[index].renewwindow = res.renewwindow;
       if (res.walletstatus) d[index].wallet = res.walletstatus;
       if (res.allowancestatus) {
         d[index].allowance = res.allowancestatus;
