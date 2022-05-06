@@ -135,6 +135,10 @@ export const columnList = [
     accessor: "contracts",
   },
   {
+    header: "Renew Window",
+    accessor: "renewwindow",
+  },
+  {
     header: "Wallet",
     accessor: "wallet",
   },
