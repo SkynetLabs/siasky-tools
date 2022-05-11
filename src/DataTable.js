@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { columnList, columnGroupsList } from "./constants/columnList";
-import { servers } from "./constants/serverList";
+import servers from "./constants/serverList.json";
 import {
   region,
   subRegion,
@@ -36,14 +36,14 @@ import Check from "@mui/icons-material/Check";
 import { getComparator } from "./services/columnSort";
 import { fetchHealthCheck, fetchStats } from "./services/getServerData";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import {initialServerData} from "./constants/serverData";
+import { initialServerData } from "./constants/serverData";
 
 const domainTabs = ["All"].concat(Object.keys(servers));
 const tabsLengths = [0].concat(
   Object.keys(servers).map((key) => servers[key].length)
 );
 const columnGroups = [
-  { header: "General", numCols: 8, hide: false, id: 'general'},
+  { header: "General", numCols: 8, hide: false, id: "general" },
   { header: "Performance", numCols: 10, hide: true, id: "performance" },
   { header: "", numCols: 1, hide: false },
   { header: "Renter Stats", numCols: 10, hide: true, id: "renter_stats" },
@@ -193,13 +193,15 @@ function DataTable() {
     setStopIndex(server1d.length);
     let serverDisplayData = [];
     server1d.forEach((item) => {
-      let serverData = {...initialServerData};
+      let serverData = { ...initialServerData };
       serverData.name = item.displayName ? item.displayName : item.name;
       serverData.ip = item.ip;
       if (item.displayName) {
         const serverInfo = item.displayName.split("-");
-        if (serverInfo[0]==='us') {
-          serverData.region = `${region[serverInfo[0]]} ${subRegion[serverInfo[1]]}`;
+        if (serverInfo[0] === "us") {
+          serverData.region = `${region[serverInfo[0]]} ${
+            subRegion[serverInfo[1]]
+          }`;
         } else {
           serverData.region = region[serverInfo[0]];
         }
@@ -257,18 +259,18 @@ function DataTable() {
     let serverDisplayData = [...serverData];
     console.log(serverDisplayData);
     server1d.forEach((item, index) => {
-      updateFunction(item.name , index, serverDisplayData);
+      updateFunction(item.name, index, serverDisplayData);
     });
-  }
+  };
   //returns number of columns to span for the column groups
   const getColumnSpan = (columnGroup) => {
-    if (columnGroup.header==='') {
-      return hiddenCols.has('health_scan_time') ? 0 : 1;
+    if (columnGroup.header === "") {
+      return hiddenCols.has("health_scan_time") ? 0 : 1;
     }
     const children = columnGroupsList[columnGroup.id].children;
-    const shownChildren = children.filter(item => !hiddenCols.has(item));
-    return shownChildren.length
-  }
+    const shownChildren = children.filter((item) => !hiddenCols.has(item));
+    return shownChildren.length;
+  };
 
   return (
     <div>
@@ -285,14 +287,17 @@ function DataTable() {
               ))}
             </Tabs>
           </ThemeProvider>
-          <div className={'flex flex-row mt-2 items-center'}>
-            <button onClick={handleRefresh} className={'flex mr-4 p-1 rounded-full hover:bg-palette-100'}>
-              <RefreshIcon className={'h-6'}/>
+          <div className={"flex flex-row mt-2 items-center"}>
+            <button
+              onClick={handleRefresh}
+              className={"flex mr-4 p-1 rounded-full hover:bg-palette-100"}
+            >
+              <RefreshIcon className={"h-6"} />
             </button>
             <button
-                className={"bg-primary rounded-full mr-2 py-1 px-6"}
-                id={"filter_list"}
-                onClick={handleMenuClick}
+              className={"bg-primary rounded-full mr-2 py-1 px-6"}
+              id={"filter_list"}
+              onClick={handleMenuClick}
             >
               Column Selection
             </button>
@@ -353,8 +358,8 @@ function DataTable() {
           <TableHead>
             <TableRow>
               {columnGroups.map((col) => {
-                const colSpan = getColumnSpan(col)
-                return !hiddenCols.has(col.id) && colSpan!==0? (
+                const colSpan = getColumnSpan(col);
+                return !hiddenCols.has(col.id) && colSpan !== 0 ? (
                   <TableCell align="center" colSpan={colSpan}>
                     {col.header}
                     {col.hide ? (
@@ -371,7 +376,12 @@ function DataTable() {
             <TableRow>
               {columnList.map((col) => {
                 return !hiddenCols.has(col.accessor) ? (
-                  <StyledTableCell padding={'none'} className={`z-10`} align={'center'} numeric>
+                  <StyledTableCell
+                    padding={"none"}
+                    className={`z-10`}
+                    align={"center"}
+                    numeric
+                  >
                     <TableSortLabel
                       active={orderBy === col.accessor}
                       direction={orderBy === col.accessor ? order : "asc"}
@@ -403,7 +413,11 @@ function DataTable() {
                 </StickyTableCell>
                 {columnList.slice(1).map((col) => {
                   return !hiddenCols.has(col.accessor) ? (
-                    <StyledTableCell align={'center'} padding={'none'} className={classes.cell}>
+                    <StyledTableCell
+                      align={"center"}
+                      padding={"none"}
+                      className={classes.cell}
+                    >
                       {getColumnTotal(col.accessor, serverData)}
                     </StyledTableCell>
                   ) : null;
@@ -419,7 +433,7 @@ function DataTable() {
                         <StyledTableCell
                           numeric
                           align="right"
-                          padding={'none'}
+                          padding={"none"}
                           className={classes.cell}
                         >
                           {n.name}
@@ -430,23 +444,42 @@ function DataTable() {
                           <StyledTableCell
                             className={`z-10`}
                             numeric
-                            align={'center'}
-                            padding={'none'}
+                            align={"center"}
+                            padding={"none"}
                             style={{
-                              color: !msAccessors.has(col.accessor) ? getStyle(n[col.accessor], col.accessor) : null,
+                              color: !msAccessors.has(col.accessor)
+                                ? getStyle(n[col.accessor], col.accessor)
+                                : null,
                             }}
                           >
                             {msAccessors.has(col.accessor) &&
-                            n[col.accessor] !== ""
-                              ?  (<>
-                                  <span style={{color: getStyle(n[col.accessor], col.accessor)}}>
-                                    {n[col.accessor] + "ms"}
-                                  </span>{' / '}
-                                  <span style={{color: getStyle(n[col.accessor+'9'], col.accessor+'9')}}>
-                                    {n[col.accessor+'9'] + "ms"}
-                                  </span>
-                                </>)
-                              : n[col.accessor]}
+                            n[col.accessor] !== "" ? (
+                              <>
+                                <span
+                                  style={{
+                                    color: getStyle(
+                                      n[col.accessor],
+                                      col.accessor
+                                    ),
+                                  }}
+                                >
+                                  {n[col.accessor] + "ms"}
+                                </span>
+                                {" / "}
+                                <span
+                                  style={{
+                                    color: getStyle(
+                                      n[col.accessor + "9"],
+                                      col.accessor + "9"
+                                    ),
+                                  }}
+                                >
+                                  {n[col.accessor + "9"] + "ms"}
+                                </span>
+                              </>
+                            ) : (
+                              n[col.accessor]
+                            )}
                           </StyledTableCell>
                         ) : null;
                       })}
