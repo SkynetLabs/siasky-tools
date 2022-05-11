@@ -10,14 +10,11 @@
                 const [ip] = await require("node:dns").promises.resolve4(
                   server.name
                 );
-
                 if (ip) return { ...server, ip };
-                return server;
               } catch {
-                console.log("Couldn't reach server", server.name);
-
-                return server;
+                // do nothing
               }
+              return server;
             })
           );
           return { ...acc, [key]: servers };
