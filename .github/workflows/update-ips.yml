@@ -16,8 +16,8 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-            node-version: 16.x
-            cache: npm
+          node-version: 16.x
+          cache: npm
 
       - run: npm i
       - name: Update server data
@@ -41,4 +41,3 @@ jobs:
             --field encoding="base64" \
             --field branch="${{ github.ref }}" \
             --field sha="$SHA"
-            
