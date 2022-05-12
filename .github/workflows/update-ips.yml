@@ -31,7 +31,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FILE_TO_COMMIT: src/constants/serverList.json
         run: |
-          git diff --exit-code -s $FILE_TO_COMMIT && exit 0
+          git diff --exit-code -s $FILE_TO_COMMIT && echo "Everything up-to-date" && exit 0
           export TODAY=$( date -u '+%Y-%m-%d' )
           export MESSAGE="chore: regenerate $FILE_TO_COMMIT for $TODAY"
           export SHA=$( git rev-parse ${{ github.ref }}:$FILE_TO_COMMIT )
