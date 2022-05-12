@@ -13,8 +13,8 @@ export const getStyle = (val, accessor) => {
     styleArr.forEach((item) => {
       switch (item.comparator) {
         case "gt":
-          let parsedVal = val
-          if (accessor === 'files'){
+          let parsedVal = val;
+          if (accessor === "files") {
             parsedVal = parseFloat(val.replace(/,/g, "")); //remove commas
           }
           if (parsedVal > item.value) {

@@ -2,17 +2,7 @@
 export const columnGroupsList = {
   general: {
     columnGroup: "General",
-    children: [
-      "name",
-      "production",
-      "region",
-      "country",
-      "ip",
-      "commit",
-      "active",
-      "accounts",
-      "alerts",
-    ],
+    children: ["name", "production", "region", "country", "ip", "commit", "active", "accounts", "alerts"],
   },
   performance: {
     columnGroup: "Performance",

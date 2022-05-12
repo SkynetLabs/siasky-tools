@@ -20,7 +20,7 @@ export const useStyles = makeStyles((theme) => ({
     marginBottom: 10,
   },
   cell: {
-    padding:0
+    padding: 0,
   },
 }));
 

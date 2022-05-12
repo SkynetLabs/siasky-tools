@@ -15,9 +15,9 @@ function descendingComparator(a, b, orderBy, order) {
   }
   //if values are equal, always secondary sort by name
   if (b.name.localeCompare(a.name, undefined, { numeric: true }) === -1) {
-    return order==='asc' ? -1 : 1;
+    return order === "asc" ? -1 : 1;
   } else {
-    return order==='asc' ? 1 : -1;
+    return order === "asc" ? 1 : -1;
   }
   return 0;
 }

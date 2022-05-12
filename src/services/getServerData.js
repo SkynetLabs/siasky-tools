@@ -61,19 +61,13 @@ export const fetchStats = (domain, index, sd, setServerData) => {
     })
     .then((res) => {
       let d = sd;
-      if (res.versioninfo && res.versioninfo.gitrevision)
-        d[index].commit = res.versioninfo.gitrevision;
+      if (res.versioninfo && res.versioninfo.gitrevision) d[index].commit = res.versioninfo.gitrevision;
       if (res.numcritalerts) d[index].alerts = res.numcritalerts;
-      if (res.streambufferread15mdatapoints)
-        d[index].dl_rate = res.streambufferread15mdatapoints.toFixed(2);
-      if (res.basesectorupload15mdatapoints)
-        d[index].ul_base_rate = res.basesectorupload15mdatapoints.toFixed(2);
-      if (res.chunkupload15mdatapoints)
-        d[index].ul_chunk_rate = res.chunkupload15mdatapoints.toFixed(2);
-      if (res.registryread15mdatapoints)
-        d[index].regr_rate = res.registryread15mdatapoints.toFixed(2);
-      if (res.registrywrite15mdatapoints)
-        d[index].regw_rate = res.registrywrite15mdatapoints.toFixed(2);
+      if (res.streambufferread15mdatapoints) d[index].dl_rate = res.streambufferread15mdatapoints.toFixed(2);
+      if (res.basesectorupload15mdatapoints) d[index].ul_base_rate = res.basesectorupload15mdatapoints.toFixed(2);
+      if (res.chunkupload15mdatapoints) d[index].ul_chunk_rate = res.chunkupload15mdatapoints.toFixed(2);
+      if (res.registryread15mdatapoints) d[index].regr_rate = res.registryread15mdatapoints.toFixed(2);
+      if (res.registrywrite15mdatapoints) d[index].regw_rate = res.registrywrite15mdatapoints.toFixed(2);
       if (res.streambufferread15mp99ms) {
         d[index].dl_p99 = res.streambufferread15mp99ms;
         d[index].dl_p999 = res.streambufferread15mp999ms;
@@ -95,10 +89,7 @@ export const fetchStats = (domain, index, sd, setServerData) => {
         d[index].regwrite_p999 = res.registrywrite15mp999ms;
       }
       if (res.systemhealthscandurationhours) {
-        const scanTime = res.systemhealthscandurationhours.toLocaleString(
-          undefined,
-          { maximumFractionDigits: 2 }
-        );
+        const scanTime = res.systemhealthscandurationhours.toLocaleString(undefined, { maximumFractionDigits: 2 });
         d[index].health_scan_time = scanTime !== 0 ? scanTime : "init";
       }
       if (res.numfiles)
@@ -106,23 +97,11 @@ export const fetchStats = (domain, index, sd, setServerData) => {
           maximumFractionDigits: 0,
         });
       if (res.storage)
-        d[index].storage = (
-          res.storage /
-          1000 /
-          1000 /
-          1000 /
-          1000
-        ).toLocaleString(undefined, {
+        d[index].storage = (res.storage / 1000 / 1000 / 1000 / 1000).toLocaleString(undefined, {
           maximumFractionDigits: 2,
         });
       if (res.contractstorage)
-        d[index].contracts = (
-          res.contractstorage /
-          1000 /
-          1000 /
-          1000 /
-          1000
-        ).toLocaleString(undefined, {
+        d[index].contracts = (res.contractstorage / 1000 / 1000 / 1000 / 1000).toLocaleString(undefined, {
           maximumFractionDigits: 2,
         });
       if (res.renewwindow) d[index].renewwindow = res.renewwindow;
@@ -130,18 +109,11 @@ export const fetchStats = (domain, index, sd, setServerData) => {
       if (res.allowancestatus) {
         d[index].allowance = res.allowancestatus;
         d[index].max_storage_price = Math.round(
-          (res.maxstorageprice * 1000 * 1000 * 1000 * 1000 * 6 * 24 * 30) /
-            1000000000000000000000000
+          (res.maxstorageprice * 1000 * 1000 * 1000 * 1000 * 6 * 24 * 30) / 1000000000000000000000000
         );
       }
       if (res.repair)
-        d[index].repair = (
-          res.repair /
-          1000 /
-          1000 /
-          1000 /
-          1000
-        ).toLocaleString(undefined, {
+        d[index].repair = (res.repair / 1000 / 1000 / 1000 / 1000).toLocaleString(undefined, {
           maximumFractionDigits: 2,
         });
       if (res.maxhealthpercentage) {

@@ -31,13 +31,13 @@ An overview of skynet servers.
 <kbd>shift</kbd><kbd>V</kbd><kbd>H</kbd><kbd>C</kbd> Show High Contract Data > 100TB <br/><br/>
 <kbd>shift</kbd><kbd>V</kbd><kbd>H</kbd><kbd>R</kbd> Show High Repair Data > 1TB <br/><br/>
 
-
 ## Constants
 
 #### Column List (columnlist.js)
 
-Contains two constants: columnGroupList and columnList. 
-- ColumnGroupList is an object of the column groups with array of children columns. 
+Contains two constants: columnGroupList and columnList.
+
+- ColumnGroupList is an object of the column groups with array of children columns.
 - ColumnList is array of column objects, each containing header (display string), accessor and description keys.
 
 #### General Constants (consts.js)

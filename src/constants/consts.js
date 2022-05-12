@@ -65,7 +65,10 @@ export const thresholds = {
     { value: 1000000, color: "orange", comparator: "gt" },
   ],
   contracts: [{ value: 100, color: "orange", comparator: "gt" }],
-  wallet: [{ value: "healthy", color: "green", comparator: "eq" }, { value: "low", color: "red", comparator: "eq" }],
+  wallet: [
+    { value: "healthy", color: "green", comparator: "eq" },
+    { value: "low", color: "red", comparator: "eq" },
+  ],
   allowance: [
     { value: "high", color: "orange", comparator: "eq" },
     { value: "low", color: "red", comparator: "eq" },
@@ -119,7 +122,7 @@ export const subRegion = {
   la: "West",
   or: "West",
   ny: "East",
-  tx: 'Mid',
+  tx: "Mid",
   sp: "Singapore",
   hk: "Hong Kong",
 };
