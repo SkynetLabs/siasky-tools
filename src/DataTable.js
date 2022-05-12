@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { columnList, columnGroupsList } from "./constants/columnList";
-import { servers } from "./constants/serverList";
+import servers from "./constants/serverList.json";
 import {
   region,
   subRegion,
