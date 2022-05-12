@@ -1,0 +1,44 @@
+name: Update Server IPs
+
+on:
+  push:
+    paths:
+      - src/constants/serverList.json
+  schedule:
+    - cron: 0 0 * * *
+  workflow_dispatch:
+
+jobs:
+  update-ips:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+            node-version: 16.x
+            cache: npm
+
+      - run: npm i
+      - name: Update server data
+        run: |
+          node src/printUpdatedServerAddresses.js > temp.json
+          mv -f temp.json src/constants/serverList.json
+          npx prettier --write src/constants/serverList.json
+
+      - name: Sync changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FILE_TO_COMMIT: src/constants/serverList.json
+        run: |
+          export TODAY=$( date -u '+%Y-%m-%d' )
+          export MESSAGE="chore: regenerate $FILE_TO_COMMIT for $TODAY"
+          export SHA=$( git rev-parse ${{ github.ref }}:$FILE_TO_COMMIT )
+          export CONTENT=$( base64 -i $FILE_TO_COMMIT )
+          gh api --method PUT /repos/:owner/:repo/contents/$FILE_TO_COMMIT \
+            --field message="$MESSAGE" \
+            --field content="$CONTENT" \
+            --field encoding="base64" \
+            --field branch="${{ github.ref }}" \
+            --field sha="$SHA"
+            
