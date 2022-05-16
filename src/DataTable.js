@@ -171,9 +171,8 @@ function DataTable() {
     setStopIndex(server1d.length);
     let serverDisplayData = [];
     server1d.forEach((item) => {
-      let serverData = { ...initialServerData };
+      let serverData = { ...initialServerData, ...item };
       serverData.name = item.displayName ? item.displayName : item.name;
-      serverData.ip = item.ip;
       if (item.displayName) {
         const serverInfo = item.displayName.split("-");
         if (serverInfo[0] === "us") {

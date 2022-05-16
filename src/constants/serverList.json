@@ -4,397 +4,669 @@
       "name": "eu-fin-1.siasky.net",
       "displayName": "eu-fin-1",
       "ip": "95.216.227.209",
-      "last_announce": "2021-11-30T01:01:24.342290518Z"
+      "last_announce": "2021-11-30T01:01:24.342290518Z",
+      "hosting": "HETZNER-DC",
+      "continentCode": "EU",
+      "countryCode": "FI",
+      "location": "Finland, Uusimaa, Helsinki"
     },
     {
       "name": "eu-fin-2.siasky.net",
       "displayName": "eu-fin-2",
       "ip": "185.130.226.99",
-      "last_announce": "2021-11-30T01:00:51.097111436Z"
+      "last_announce": "2021-11-30T01:00:51.097111436Z",
+      "hosting": "ServerKing B.V.",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-fin-3.siasky.net",
       "displayName": "eu-fin-3",
       "ip": "185.130.226.6",
-      "last_announce": "2021-11-29T01:00:14.245975884Z"
+      "last_announce": "2021-11-29T01:00:14.245975884Z",
+      "hosting": "Hostkey BV",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-fin-4.siasky.net",
       "displayName": "eu-fin-4",
       "ip": "185.130.226.101",
-      "last_announce": "2021-11-30T01:00:47.765225257Z"
+      "last_announce": "2021-11-30T01:00:47.765225257Z",
+      "hosting": "ServerKing B.V.",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-ger-1.siasky.net",
       "displayName": "eu-ger-1",
       "ip": "88.198.64.61",
-      "last_announce": "2021-11-30T01:02:59.167077968Z"
+      "last_announce": "2021-11-30T01:02:59.167077968Z",
+      "hosting": "Network Address for Servers",
+      "continentCode": "EU",
+      "countryCode": "DE",
+      "location": "Germany, Saxony, Falkenstein"
     },
     {
       "name": "eu-ger-2.siasky.net",
       "displayName": "eu-ger-2",
       "ip": "116.202.160.167",
-      "last_announce": "2021-11-30T00:00:03.329819545Z"
+      "last_announce": "2021-11-30T00:00:03.329819545Z",
+      "hosting": "Hetzner",
+      "continentCode": "EU",
+      "countryCode": "DE",
+      "location": "Germany, Saxony, Falkenstein"
     },
     {
       "name": "eu-ger-3.siasky.net",
       "displayName": "eu-ger-3",
       "ip": "185.130.226.97",
-      "last_announce": "2021-11-30T01:01:17.173604557Z"
+      "last_announce": "2021-11-30T01:01:17.173604557Z",
+      "hosting": "ServerKing B.V.",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-ger-5.siasky.net",
       "displayName": "eu-ger-5",
       "ip": "213.227.139.144",
-      "last_announce": "2021-11-30T01:02:39.679440497Z"
+      "last_announce": "2021-11-30T01:02:39.679440497Z",
+      "hosting": "LeaseWeb Netherlands B.V.",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-ger-6.siasky.net",
       "displayName": "eu-ger-6",
       "ip": "5.79.121.89",
-      "last_announce": "2021-11-30T01:01:59.035778409Z"
+      "last_announce": "2021-11-30T01:01:59.035778409Z",
+      "hosting": "LeaseWeb Netherlands B.V.",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Haarlem"
     },
     {
       "name": "eu-ger-7.siasky.net",
       "displayName": "eu-ger-7",
       "ip": "37.48.102.70",
-      "last_announce": "2021-11-30T01:01:32.435621978Z"
+      "last_announce": "2021-11-30T01:01:32.435621978Z",
+      "hosting": "LeaseWeb Netherlands B.V",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-ger-8.siasky.net",
       "displayName": "eu-ger-8",
       "ip": "212.32.255.73",
-      "last_announce": "2021-11-30T01:00:02.105951519Z"
+      "last_announce": "2021-11-30T01:00:02.105951519Z",
+      "hosting": "LeaseWeb Netherlands B.V",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-pol-1.siasky.net",
       "displayName": "eu-pol-1",
       "ip": "80.82.77.235",
-      "last_announce": "2021-11-30T01:00:13.644333507Z"
+      "last_announce": "2021-11-30T01:00:13.644333507Z",
+      "hosting": "IP Volume inc",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-pol-2.siasky.net",
       "displayName": "eu-pol-2",
       "ip": "95.214.52.175",
-      "last_announce": "2021-11-30T01:00:41.559824957Z"
+      "last_announce": "2021-11-30T01:00:41.559824957Z",
+      "hosting": "Meverywhere sp. z o.o",
+      "continentCode": "EU",
+      "countryCode": "PL",
+      "location": "Poland, Mazovia, Warsaw"
     },
     {
       "name": "us-or-1.siasky.net",
       "displayName": "us-or-1",
       "ip": "5.254.34.149",
-      "last_announce": "2021-11-30T01:02:21.86789372Z"
+      "last_announce": "2021-11-30T01:02:21.86789372Z",
+      "hosting": "Voxility LLC",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, California, Los Angeles"
     },
     {
       "name": "us-or-2.siasky.net",
       "displayName": "us-or-2",
       "ip": "5.254.34.150",
-      "last_announce": "2021-11-30T01:04:54.806149344Z"
+      "last_announce": "2021-11-30T01:04:54.806149344Z",
+      "hosting": "Voxility LLC",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, California, Los Angeles"
     },
     {
       "name": "us-va-1.siasky.net",
       "displayName": "us-va-1",
       "ip": "162.244.80.49",
-      "last_announce": "2021-11-30T01:03:30.483115012Z"
+      "last_announce": "2021-11-30T01:03:30.483115012Z",
+      "hosting": "Data Room, Inc",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, New York, New York"
     },
     {
       "name": "us-va-2.siasky.net",
       "displayName": "us-va-2",
       "ip": "162.244.81.253",
-      "last_announce": "2021-11-30T01:04:18.948735991Z"
+      "last_announce": "2021-11-30T01:04:18.948735991Z",
+      "hosting": "Data Room, Inc",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, New York, New York"
     },
     {
       "name": "us-va-3.siasky.net",
       "displayName": "us-va-3",
       "ip": "162.244.81.164",
-      "last_announce": "2021-11-30T01:00:30.324974111Z"
+      "last_announce": "2021-11-30T01:00:30.324974111Z",
+      "hosting": "Data Room, Inc",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, New York, New York"
     },
     {
       "name": "eu-fin-5.siasky.net",
       "displayName": "eu-fin-5",
       "ip": "185.130.226.111",
-      "last_announce": "2021-11-30T01:01:52.913580842Z"
+      "last_announce": "2021-11-30T01:01:52.913580842Z",
+      "hosting": "ServerKing B.V.",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-fin-6.siasky.net",
       "displayName": "eu-fin-6",
       "ip": "80.82.77.136",
-      "last_announce": "2021-11-30T01:02:54.755514562Z"
+      "last_announce": "2021-11-30T01:02:54.755514562Z",
+      "hosting": "IP Volume inc",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-fin-7.siasky.net",
       "displayName": "eu-fin-7",
       "ip": "95.214.53.43",
-      "last_announce": "2021-11-29T01:00:25.226972899Z"
+      "last_announce": "2021-11-29T01:00:25.226972899Z",
+      "hosting": "Meverywhere sp. z o.o",
+      "continentCode": "EU",
+      "countryCode": "PL",
+      "location": "Poland, Mazovia, Warsaw"
     },
     {
       "name": "eu-fin-9.siasky.net",
       "displayName": "eu-fin-9",
       "ip": "65.21.195.162",
-      "last_announce": "2021-11-30T01:05:30.756034205Z"
+      "last_announce": "2021-11-30T01:05:30.756034205Z",
+      "hosting": "Hetzner",
+      "continentCode": "EU",
+      "countryCode": "FI",
+      "location": "Finland, Uusimaa, Helsinki"
     },
     {
       "name": "eu-fin-10.siasky.net",
       "displayName": "eu-fin-10",
       "ip": "185.16.38.19",
-      "last_announce": "2021-11-30T01:02:44.36291264Z"
+      "last_announce": "2021-11-30T01:02:44.36291264Z",
+      "hosting": "Meverywhere sp. z o.o",
+      "continentCode": "EU",
+      "countryCode": "PL",
+      "location": "Poland, Mazovia, Warsaw"
     },
     {
       "name": "eu-ger-9.siasky.net",
       "displayName": "eu-ger-9",
       "ip": "37.48.104.129",
-      "last_announce": "2021-11-30T01:01:55.756137875Z"
+      "last_announce": "2021-11-30T01:01:55.756137875Z",
+      "hosting": "LeaseWeb Netherlands B.V.",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-ger-10.siasky.net",
       "displayName": "eu-ger-10",
       "ip": "37.48.104.195",
-      "last_announce": "2021-11-30T01:00:57.380628465Z"
+      "last_announce": "2021-11-30T01:00:57.380628465Z",
+      "hosting": "LeaseWeb Netherlands B.V.",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-ger-11.siasky.net",
       "displayName": "eu-ger-11",
       "ip": "146.0.74.121",
-      "last_announce": "2021-11-30T01:00:37.226432094Z"
+      "last_announce": "2021-11-30T01:00:37.226432094Z",
+      "hosting": "HOSTKEY",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-ger-12.siasky.net",
       "displayName": "eu-ger-12",
       "ip": "146.0.74.120",
-      "last_announce": "2021-11-30T01:01:00.655264795Z"
+      "last_announce": "2021-11-30T01:01:00.655264795Z",
+      "hosting": "HOSTKEY",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-pol-3.siasky.net",
       "displayName": "eu-pol-3",
       "ip": "89.248.174.169",
-      "last_announce": "2021-11-30T01:01:50.397125197Z"
+      "last_announce": "2021-11-30T01:01:50.397125197Z",
+      "hosting": "Quasi Networks LTD.",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-pol-4.siasky.net",
       "displayName": "eu-pol-4",
       "ip": "80.82.77.134",
-      "last_announce": "2021-11-30T01:07:07.181391025Z"
+      "last_announce": "2021-11-30T01:07:07.181391025Z",
+      "hosting": "IP Volume inc",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-pol-5.siasky.net",
       "displayName": "eu-pol-5",
       "ip": "89.248.174.227",
-      "last_announce": "2021-11-30T01:02:03.91526842Z"
+      "last_announce": "2021-11-30T01:02:03.91526842Z",
+      "hosting": "Quasi Networks LTD.",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "us-ny-1.siasky.net",
       "displayName": "us-ny-1",
       "ip": "216.52.183.170",
-      "last_announce": "2021-11-30T12:36:51.687357714Z"
+      "last_announce": "2021-11-30T12:36:51.687357714Z",
+      "hosting": "Internap Holding LLC",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, New York, New York"
     },
     {
       "name": "us-ny-2.siasky.net",
       "displayName": "us-ny-2",
       "ip": "216.52.183.210",
-      "last_announce": "2021-11-30T12:58:10.541736187Z"
+      "last_announce": "2021-11-30T12:58:10.541736187Z",
+      "hosting": "Internap Holding LLC",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, New York, New York"
     },
     {
       "name": "us-la-1.siasky.net",
       "displayName": "us-la-1",
       "ip": "103.214.108.162",
-      "last_announce": "2021-11-30T01:03:21.895039079Z"
+      "last_announce": "2021-11-30T01:03:21.895039079Z",
+      "hosting": "End of Reality LLC",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, California, Los Angeles"
     },
     {
       "name": "us-la-2.siasky.net",
       "displayName": "us-la-2",
       "ip": "167.160.90.90",
-      "last_announce": "2021-11-30T01:04:26.860185328Z"
+      "last_announce": "2021-11-30T01:04:26.860185328Z",
+      "hosting": "Dedicated.com",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, California, Los Angeles"
     },
     {
       "name": "us-la-3.siasky.net",
       "displayName": "us-la-3",
       "ip": "167.160.90.106",
-      "last_announce": "2021-11-30T01:03:03.247607632Z"
+      "last_announce": "2021-11-30T01:03:03.247607632Z",
+      "hosting": "Dedicated.com",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, California, Los Angeles"
     },
     {
       "name": "us-va-4.siasky.net",
       "displayName": "us-va-4",
       "ip": "162.244.80.76",
-      "last_announce": "2021-11-30T01:06:01.715690742Z"
+      "last_announce": "2021-11-30T01:06:01.715690742Z",
+      "hosting": "Data Room, Inc",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, New York, New York"
     },
     {
       "name": "us-va-5.siasky.net",
       "displayName": "us-va-5",
       "ip": "162.244.81.35",
-      "last_announce": "2021-11-30T01:05:54.74678021Z"
+      "last_announce": "2021-11-30T01:05:54.74678021Z",
+      "hosting": "Data Room, Inc",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, New York, New York"
     },
     {
       "name": "us-va-6.siasky.net",
       "displayName": "us-va-6",
       "ip": "135.148.168.148",
-      "last_announce": "2021-11-30T01:05:02.176123695Z"
+      "last_announce": "2021-11-30T01:05:02.176123695Z",
+      "hosting": "OVH US LLC",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, Virginia, Reston"
     },
     {
       "name": "as-sp-1.siasky.net",
       "displayName": "as-sp-1",
       "ip": "23.111.12.30",
-      "last_announce": "2021-11-30T01:02:14.04819614Z"
+      "last_announce": "2021-11-30T01:02:14.04819614Z",
+      "hosting": "Leaseweb Asia Pacific pte. ltd",
+      "continentCode": "AS",
+      "countryCode": "SG",
+      "location": "Singapore, Central Singapore, Singapore"
     },
     {
       "name": "as-sp-2.siasky.net",
       "displayName": "as-sp-2",
       "ip": "23.111.12.25",
-      "last_announce": "2021-11-30T01:05:38.262606801Z"
+      "last_announce": "2021-11-30T01:05:38.262606801Z",
+      "hosting": "Leaseweb Asia Pacific pte. ltd",
+      "continentCode": "AS",
+      "countryCode": "SG",
+      "location": "Singapore, Central Singapore, Singapore"
     },
     {
       "name": "eu-ger-4.siasky.net",
       "displayName": "eu-ger-4",
       "ip": "37.48.102.66",
-      "last_announce": "2021-11-30T01:03:32.153563006Z"
+      "last_announce": "2021-11-30T01:03:32.153563006Z",
+      "hosting": "LeaseWeb Netherlands B.V",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-fin-11.siasky.net",
       "displayName": "eu-fin-11",
       "ip": "146.0.74.33",
-      "last_announce": "2021-11-29T01:01:01.656373502Z"
+      "last_announce": "2021-11-29T01:01:01.656373502Z",
+      "hosting": "HOSTKEY",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-fin-12.siasky.net",
       "displayName": "eu-fin-12",
       "ip": "146.0.74.95",
-      "last_announce": "2021-11-30T01:01:38.600149895Z"
+      "last_announce": "2021-11-30T01:01:38.600149895Z",
+      "hosting": "HOSTKEY",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-fin-13.siasky.net",
       "displayName": "eu-fin-13",
       "ip": "146.0.74.118",
-      "last_announce": "2021-11-30T01:01:30.04387568Z"
+      "last_announce": "2021-11-30T01:01:30.04387568Z",
+      "hosting": "HOSTKEY",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-fin-14.siasky.net",
       "displayName": "eu-fin-14",
       "ip": "146.0.74.114",
-      "last_announce": "2021-11-30T01:00:45.751269318Z"
+      "last_announce": "2021-11-30T01:00:45.751269318Z",
+      "hosting": "HOSTKEY",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-fin-15.siasky.net",
       "displayName": "eu-fin-15",
       "ip": "5.39.223.123",
-      "last_announce": "2021-11-29T01:02:37.337731006Z"
+      "last_announce": "2021-11-29T01:02:37.337731006Z",
+      "hosting": "Hostkey",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "as-hk-1.siasky.net",
       "displayName": "as-hk-1",
       "ip": "209.58.186.177",
-      "last_announce": "2021-11-30T01:03:15.884762418Z"
+      "last_announce": "2021-11-30T01:03:15.884762418Z",
+      "hosting": "LeaseWeb Asia Pacific Hong Kong",
+      "continentCode": "AS",
+      "countryCode": "HK",
+      "location": "Hong Kong, Central and Western District, Central"
     },
     {
       "name": "eu-fin-8.siasky.net",
       "displayName": "eu-fin-8",
       "ip": "46.183.219.217",
-      "last_announce": "2021-11-30T01:00:19.473762686Z"
+      "last_announce": "2021-11-30T01:00:19.473762686Z",
+      "hosting": "Dataclub S.A.",
+      "continentCode": "EU",
+      "countryCode": "LV",
+      "location": "Latvia, Riga, Riga"
     },
     {
       "name": "us-pa-1.siasky.net",
       "displayName": "us-pa-1",
-      "ip": "185.105.7.224"
+      "ip": "185.105.7.224",
+      "hosting": "Data Room, Inc",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, New York, Flushing"
     },
     {
       "name": "us-pa-2.siasky.net",
       "displayName": "us-pa-2",
-      "ip": "162.244.80.231"
+      "ip": "162.244.80.231",
+      "hosting": "Data Room, Inc",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, New York, New York"
     }
   ],
   "skynetpro.net": [
     {
       "name": "eu-pol-101.skynetpro.net",
       "displayName": "eu-pol-101",
-      "ip": "78.159.118.230"
+      "ip": "78.159.118.230",
+      "hosting": "Leaseweb Deutschland GmbH",
+      "continentCode": "EU",
+      "countryCode": "DE",
+      "location": "Germany, Hesse, Frankfurt am Main"
     },
     {
       "name": "eu-pol-102.skynetpro.net",
       "displayName": "eu-pol-102",
-      "ip": "65.108.4.49"
+      "ip": "65.108.4.49",
+      "hosting": "Hetzner Online GmbH",
+      "continentCode": "EU",
+      "countryCode": "FI",
+      "location": "Finland, Uusimaa, Helsinki"
     },
     {
       "name": "eu-nl-101.skynetpro.net",
       "displayName": "eu-nl-101",
-      "ip": "5.39.218.34"
+      "ip": "5.39.218.34",
+      "hosting": "Hostkey",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "us-tx-101.skynetpro.net",
       "displayName": "us-tx-101",
-      "ip": "66.23.203.226"
+      "ip": "66.23.203.226",
+      "hosting": "Dedicated.com",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, Texas, Dallas"
     },
     {
       "name": "us-tx-102.skynetpro.net",
       "displayName": "us-tx-102",
-      "ip": "66.23.203.234"
+      "ip": "66.23.203.234",
+      "hosting": "Dedicated.com",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, Texas, Dallas"
     },
     {
       "name": "us-va-101.skynetpro.net",
       "displayName": "us-va-101",
-      "ip": "185.105.7.227"
+      "ip": "185.105.7.227",
+      "hosting": "Data Room, Inc",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, New York, Flushing"
     }
   ],
   "skynetfree.net": [
     {
       "name": "eu-nl-102.skynetfree.net",
       "displayName": "eu-nl-102",
-      "ip": "89.248.174.153"
+      "ip": "89.248.174.153",
+      "hosting": "Quasi Networks LTD.",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-nl-103.skynetfree.net",
       "displayName": "eu-nl-103",
-      "ip": "89.248.162.160"
+      "ip": "89.248.162.160",
+      "hosting": "Quasi Networks LTD",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-nl-104.skynetfree.net",
       "displayName": "eu-nl-104",
-      "ip": "80.82.76.175"
+      "ip": "80.82.76.175",
+      "hosting": "IP Volume inc",
+      "continentCode": "EU",
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "eu-lv-101.skynetfree.net",
       "displayName": "eu-lv-101",
-      "ip": "46.183.219.214"
+      "ip": "46.183.219.214",
+      "hosting": "Dataclub S.A.",
+      "continentCode": "EU",
+      "countryCode": "LV",
+      "location": "Latvia, Riga, Riga"
     },
     {
       "name": "eu-lv-102.skynetfree.net",
       "displayName": "eu-lv-102",
-      "ip": "46.183.219.215"
+      "ip": "46.183.219.215",
+      "hosting": "Dataclub S.A.",
+      "continentCode": "EU",
+      "countryCode": "LV",
+      "location": "Latvia, Riga, Riga"
     },
     {
       "name": "eu-lv-103.skynetfree.net",
       "displayName": "eu-lv-103",
-      "ip": "46.183.219.216"
+      "ip": "46.183.219.216",
+      "hosting": "Dataclub S.A.",
+      "continentCode": "EU",
+      "countryCode": "LV",
+      "location": "Latvia, Riga, Riga"
     }
   ],
   "dev": [
     {
       "name": "dev1.siasky.dev",
       "ip": "88.198.21.206",
-      "last_announce": "2021-11-30T01:02:50.179401729Z"
+      "last_announce": "2021-11-30T01:02:50.179401729Z",
+      "hosting": "Hetzner",
+      "continentCode": "EU",
+      "countryCode": "DE",
+      "location": "Germany, Saxony, Falkenstein"
     },
     {
       "name": "dev2.siasky.dev",
       "ip": "168.119.138.85",
-      "last_announce": "2021-11-30T01:01:07.556347237Z"
+      "last_announce": "2021-11-30T01:01:07.556347237Z",
+      "hosting": "Hetzner",
+      "continentCode": "EU",
+      "countryCode": "DE",
+      "location": "Germany, Saxony, Falkenstein"
     },
     {
       "name": "dev3.siasky.dev",
       "ip": "46.4.121.39",
-      "last_announce": "2021-11-30T01:02:37.163056724Z"
+      "last_announce": "2021-11-30T01:02:37.163056724Z",
+      "hosting": "Hetzner",
+      "continentCode": "EU",
+      "countryCode": "DE",
+      "location": "Germany, Saxony, Falkenstein"
     }
   ],
   "siasky.xyz": [
     {
       "name": "siasky.xyz",
       "ip": "135.181.139.32",
-      "last_announce": "2021-11-30T01:04:13.927962906Z"
+      "last_announce": "2021-11-30T01:04:13.927962906Z",
+      "hosting": "Hetzner",
+      "continentCode": "EU",
+      "countryCode": "FI",
+      "location": "Finland, Uusimaa, Helsinki"
     }
   ],
   "Team Portals": [
     {
       "name": "seveysky.net",
-      "ip": "66.29.147.77"
+      "ip": "66.29.147.77",
+      "hosting": "Namecheap, Inc.",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, Arizona, Phoenix"
     },
     {
       "name": "chaindrive.xyz",
-      "ip": "162.251.165.82"
+      "ip": "162.251.165.82",
+      "hosting": "US Dedicated",
+      "continentCode": "NA",
+      "countryCode": "US",
+      "location": "United States, California, Los Angeles"
     }
   ]
 }

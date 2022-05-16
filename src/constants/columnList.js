@@ -49,8 +49,16 @@ export const columnList = [
     accessor: "region",
   },
   {
+    header: "Country",
+    accessor: "countryCode",
+  },
+  {
     header: "IP Addr",
     accessor: "ip",
+  },
+  {
+    header: "Hosting",
+    accessor: "hosting",
   },
   {
     header: "Commit",
