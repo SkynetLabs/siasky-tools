@@ -25,7 +25,7 @@ jobs:
         run: CI=false npm run build
 
       - name: Deploy to Skynet
-        uses: skynetlabs/deploy-to-skynet-action@main
+        uses: skynetlabs/deploy-to-skynet-action@use-vercel-ncc
         with:
           upload-dir: build
           github-token: ${{ secrets.GITHUB_TOKEN }}
