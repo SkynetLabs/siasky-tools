@@ -614,12 +614,12 @@
   "dev": [
     {
       "name": "dev1.siasky.dev",
-      "ip": "88.198.21.206",
+      "ip": "65.21.207.207",
       "last_announce": "2021-11-30T01:02:50.179401729Z",
       "hosting": "Hetzner",
       "continentCode": "EU",
-      "countryCode": "DE",
-      "location": "Germany, Saxony, Falkenstein"
+      "countryCode": "FI",
+      "location": "Finland, Uusimaa, Helsinki"
     },
     {
       "name": "dev2.siasky.dev",
