@@ -123,12 +123,12 @@
     {
       "name": "eu-pol-2.siasky.net",
       "displayName": "eu-pol-2",
-      "ip": "95.214.52.175",
+      "ip": "89.248.168.48",
       "last_announce": "2021-11-30T01:00:41.559824957Z",
-      "hosting": "Meverywhere sp. z o.o",
+      "hosting": "IP Volume inc",
       "continentCode": "EU",
-      "countryCode": "PL",
-      "location": "Poland, Mazovia, Warsaw"
+      "countryCode": "NL",
+      "location": "Netherlands, North Holland, Amsterdam"
     },
     {
       "name": "us-or-1.siasky.net",
